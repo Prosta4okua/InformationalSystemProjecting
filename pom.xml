@@ -8,11 +8,11 @@
 		<version>2.7.4</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.nalitnyk</groupId>
-	<artifactId>myArtifact</artifactId>
+	<groupId>com.example</groupId>
+	<artifactId>nalitnykApp</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>informational system projecting</name>
-	<description>informational system projecting</description>
+	<name>lw2</name>
+	<description>Demo project for Spring Boot</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
@@ -21,13 +21,11 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter</artifactId>
 		</dependency>
-
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-devtools</artifactId>
-			<scope>runtime</scope>
-			<optional>true</optional>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
+
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>

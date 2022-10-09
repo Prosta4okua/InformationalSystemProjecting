@@ -1,9 +1,9 @@
-package com.nalitnyk.lw1;
+package com.nalitnyk.lab2;
 
 import java.util.Arrays;
 import java.util.Scanner;
 
-public class Tasks {
+public class OldTasks {
     private static final Scanner sc = new Scanner(System.in);
 
     public static void discriminator() {
