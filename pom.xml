@@ -9,10 +9,10 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.nalitnyk</groupId>
-	<artifactId>nformational_system_projecting</artifactId>
+	<artifactId>myArtifact</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>nformational system projecting</name>
-	<description>nformational system projecting</description>
+	<name>informational system projecting</name>
+	<description>informational system projecting</description>
 	<properties>
 		<java.version>17</java.version>
 	</properties>
