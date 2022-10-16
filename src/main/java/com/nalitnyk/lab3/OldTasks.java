@@ -1,4 +1,4 @@
-package com.nalitnyk.lab2;
+package com.nalitnyk.lab3;
 
 import java.util.Arrays;
 import java.util.Scanner;

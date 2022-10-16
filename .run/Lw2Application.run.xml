@@ -1,8 +1,8 @@
 <component name="ProjectRunConfigurationManager">
-  <configuration default="false" name="Lw2Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+  <configuration default="false" name="Lw3Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
     <option name="ACTIVE_PROFILES" />
     <module name="nalitnykApp" />
-    <option name="SPRING_BOOT_MAIN_CLASS" value="com.nalitnyk.lab2.Lw2Application" />
+    <option name="SPRING_BOOT_MAIN_CLASS" value="com.nalitnyk.lab3.Lw3Application" />
     <method v="2">
       <option name="Make" enabled="true" />
     </method>
