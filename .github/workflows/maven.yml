@@ -30,7 +30,7 @@ env:
   IMAGE_NAME: "my-spring-github-actions"
 # 3
 jobs:
-  # just remove this string1
+  # just remove this string2
   #  build:
   #    runs-on: ubuntu-latest
   #    steps:
