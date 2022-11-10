@@ -97,6 +97,14 @@ jobs:
 #          passphrase: ${{ secrets.SERVER_PASSPHRASE }}
           envs: IMAGE_NAME,REGISTRY,{{ secrets.DIGITALOCEAN_ACCESS_TOKEN }},GITHUB_SHA,{{ secrets.USERNAME}}
           script: |
+            # Installing docker
+            sudo apt update
+            sudo apt install apt-transport-https ca-certificates curl software-properties-common
+            curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+            sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+            apt-cache policy docker-ce
+            sudo apt install docker-ce
+            sudo systemctl status docker
             # Login to registry
             docker login -u ${{ secrets.USERNAME }} -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} registry.digitalocean.com
             # Stop running container
