@@ -29,10 +29,6 @@ jobs:
         cache: maven
     - name: Build with Maven
       run: mvn clean package
-    - name: login to dockerhub
-      run: cmd
-    - name: build a docker image
-      run: cmd
     - name: Build & push Docker image
       uses: mr-smithers-excellent/docker-build-push@v5
       with:
