@@ -58,8 +58,8 @@ jobs:
           token: ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
       - name: View Docker images
         run: docker images
-      - name: Run docker image
-        run: docker run -tp  8080:8080 springindocker
+#      - name: Run docker image
+#        run: docker run -tp  8080:8080 springindocker
 
       - name: Log in to DigitalOcean Container Registry with short-lived credentials
         run: doctl registry login --expiry-seconds 600
