@@ -26,8 +26,8 @@ on:
 # 2
 # Setting up env vars (docker image name)
 env:
-  REGISTRY: "your-digitalocean-registry-container-url"
-  IMAGE_NAME: "myspringdockerimage"
+  REGISTRY: "nalitnyk"
+  IMAGE_NAME: "my-spring-github-actions"
 # 3
 jobs:
 #  build:
