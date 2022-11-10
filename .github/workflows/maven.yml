@@ -113,7 +113,7 @@ jobs:
             # Remove old container
             docker rm $(echo $IMAGE_NAME)
             # Run a new container from a new image
-            docker run -tp \
+            docker run -d \
             -p 8080:8080 \
             --restart always \
             --name $(echo $IMAGE_NAME) \
