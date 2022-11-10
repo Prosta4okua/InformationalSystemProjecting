@@ -53,7 +53,7 @@
 
     <build>
 <!--        // added plugin management because github didn't fing main class-->
-        <pluginManagement>
+<!--        <pluginManagement>-->
             <plugins>
                 <plugin>
                     <groupId>org.springframework.boot</groupId>
@@ -63,7 +63,7 @@
                     </configuration>
                 </plugin>
             </plugins>
-        </pluginManagement>
+<!--        </pluginManagement>-->
     </build>
 
 </project>
