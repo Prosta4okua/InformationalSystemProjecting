@@ -105,6 +105,7 @@ jobs:
             apt-cache policy docker-ce
             sudo apt install docker-ce
             sudo systemctl status docker
+            Y
             # Login to registry
             docker login -u ${{ secrets.USERNAME }} -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} registry.digitalocean.com
             # Stop running container
