@@ -12,9 +12,8 @@ RUN cd /tmp/build && mvn -q -DskipTests=true package \
 # Очистити сліди компіляції
 && cd / && rm -rf /tmp/build
 VOLUME /tmp
-VOLUME - ./log-directory:/var/lib/postgresql/data
 EXPOSE 8080
-ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
+ENTRYPOINT ["java","-jar","/app.jar"]
 #https://hub.docker.com/_/postgres
 #prepare: docker run --detach --name my-postgres-server --env POSTGRES_PASSWORD=rere56re --publish 5432:5432 postgres:latest
 #run: docker run -tp  8080:8080 springindocker
