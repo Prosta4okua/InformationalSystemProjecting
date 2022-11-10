@@ -118,5 +118,5 @@ jobs:
             --restart always \
             --name $(echo $IMAGE_NAME) \
             $(echo $REGISTRY)/$(echo $IMAGE_NAME):latest
-            echo("end")
+            echo "!!!end!!!"
 #            $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7)
