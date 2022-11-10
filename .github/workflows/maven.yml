@@ -95,7 +95,8 @@ jobs:
           password: ${{ secrets.PASSWORD }}
 #          key: ${{ secrets.SSHKEY }}
 #          passphrase: ${{ secrets.SERVER_PASSPHRASE }}
-          envs: IMAGE_NAME,REGISTRY,{{ secrets.DIGITALOCEAN_ACCESS_TOKEN }},GITHUB_SHA,{{ secrets.USERNAME}}
+          envs: IMAGE_NAME,REGISTRY,{{ secrets.DIGITALOCEAN_ACCESS_TOKEN }},GITHUB_SHA,{{ secrets.USERNAME}},{{ secrets.DIGITALOCEAN_ACCESS_TOKEN }}
+#          https://www.digitalocean.com/community/questions/can-t-login-digitalocean-container-registry
           script: |
             # Installing docker
             sudo apt update
@@ -106,7 +107,7 @@ jobs:
             sudo apt install docker-ce -y
             sudo systemctl status docker
             # Login to registry
-            docker login -u ${{ secrets.USERNAME }} -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} registry.digitalocean.com
+            docker login -u ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} -p ${{ secrets.DIGITALOCEAN_ACCESS_TOKEN }} registry.digitalocean.com
             # Stop running container
             docker stop $(echo $IMAGE_NAME)
             # Remove old container
