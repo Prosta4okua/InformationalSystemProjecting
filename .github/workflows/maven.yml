@@ -114,7 +114,7 @@ jobs:
             docker rm $(echo $IMAGE_NAME)
             # Run a new container from a new image
             docker run -dt \
-            -p 8080:8080 \
+            -p 9999:9999 \
             --restart always \
             --name $(echo $IMAGE_NAME) \
             $(echo $REGISTRY)/$(echo $IMAGE_NAME):latest
