@@ -12,6 +12,7 @@ RUN cd /tmp/build && mvn -q -DskipTests=true package \
 # Очистити сліди компіляції
 && cd / && rm -rf /tmp/build
 VOLUME /tmp
+#VOLUME - ./log-directory:/var/lib/postgresql/data
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/app.jar"]
 #https://hub.docker.com/_/postgres

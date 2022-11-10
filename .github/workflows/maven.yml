@@ -113,10 +113,10 @@ jobs:
             # Remove old container
             docker rm $(echo $IMAGE_NAME)
             # Run a new container from a new image
-            docker run -dt \
+            docker run -tp \
             -p 8080:8080 \
             --restart always \
             --name $(echo $IMAGE_NAME) \
-            $(echo $REGISTRY)/$(echo $IMAGE_NAME):latest
+            $(echo $REGISTRY)/$(echo $IMAGE_NAME)
             echo "!!!end!!!"
 #            $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7)
