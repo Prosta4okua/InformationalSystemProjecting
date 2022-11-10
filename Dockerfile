@@ -17,4 +17,4 @@ EXPOSE 8080
 ENTRYPOINT ["java","-Djava.security.egd=file:/dev/./urandom","-jar","/app.jar"]
 #https://hub.docker.com/_/postgres
 #prepare: docker run --detach --name my-postgres-server --env POSTGRES_PASSWORD=rere56re --publish 5432:5432 postgres:latest
-#run: docker run --net=host -tp  8080:8080 springindocker
+#run: docker run -tp  8080:8080 springindocker
