@@ -30,7 +30,7 @@ env:
   IMAGE_NAME: "my-spring-github-actions"
 # 3
 jobs:
-  # just remove this string2
+  # just remove this string4
   #  build:
   #    runs-on: ubuntu-latest
   #    steps:
@@ -118,6 +118,7 @@ jobs:
           dockerfile: Dockerfile
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
+          passphrase: ${{ secrets.SERVER_PASSPHRASE }}
 
 #      - name: Push image to DigitalOcean Container Registry
 #        run: docker push $(echo $REGISTRY)/$(echo $IMAGE_NAME):$(echo $GITHUB_SHA | head -c7)
