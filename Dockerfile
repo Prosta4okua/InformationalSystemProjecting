@@ -1,8 +1,10 @@
 FROM eclipse-temurin:17-jdk-jammy
 FROM maven:3.8.6
 
+
+COPY .mvn/ .mvn/
+
 ADD pom.xml /tmp/build/
-#ADD src/main/resources/application.properties src/main/resources/application.properties
 RUN cd /tmp/build && mvn -q dependency:resolve
 ADD src /tmp/build/src
 # Створіть програму
