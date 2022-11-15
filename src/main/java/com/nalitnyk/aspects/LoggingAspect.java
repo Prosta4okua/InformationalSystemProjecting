@@ -22,9 +22,6 @@ public class LoggingAspect {
 
     private final Logger log = LoggerFactory.getLogger(this.getClass());
 
-
-
-
 //    @Before("execution(public ResponseEntity getAllRates())")
 //    @Before("execution(* com.nalitnyk.testpackage.ExchangeRateController*(..))")
 //    @Before("execution(* com.howtodoinjava.app.service.impl.EmployeeManagerImpl.*(..))")
